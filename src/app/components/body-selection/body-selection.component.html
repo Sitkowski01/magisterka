@@ -1,0 +1,319 @@
+<!-- Krok 1: Wybór Obszaru Ciała -->
+<div *ngIf="currentStep === 1" class="step step-1">
+  <h2>🔹 Krok 1: Wybór Obszaru Ciała</h2>
+  <p>Witaj! Jestem botem medycznym. Wskaż, która część ciała Cię niepokoi, klikając odpowiedni obszar na schemacie.</p>
+  <div class="image-container">
+    <img src="/sylwetka_optimized.png" alt="Sylwetka człowieka" />
+    <svg class="overlay-svg">
+      <polygon 
+        points="165,106,169,105,182,108,196,109,215,107,221,105,225,105,225,131,228,149,230,158,227,168,225,180,223,192,211,197,190,198,178,196,167,191,165,173,161,162,164,137"
+        [attr.class]="selectedArea === 'chest' ? 'clickable-area selected' : 'clickable-area'"
+        (click)="onSelect('chest')">
+      </polygon>
+    </svg>
+  </div>
+</div>
+
+<!-- Krok 2: Potwierdzenie Wyboru -->
+<div *ngIf="currentStep === 2" class="step step-2">
+  <h2>🔹 Krok 2: Potwierdzenie Wyboru</h2>
+  <p>Wybrałeś: <strong>{{ selectedAreaName }}</strong>. Pomogę Ci ocenić Twoje objawy i doradzę, co dalej.</p>
+  <p>Czy to właściwy obszar, którego dotyczą Twoje dolegliwości?</p>
+  <div class="buttons">
+    <button (click)="goToStep(3)">✅ Tak</button>
+    <button (click)="goToStep(1)">❌ Nie</button>
+  </div>
+</div>
+
+<!-- Krok 3: Zbieranie Objawów -->
+<div *ngIf="currentStep === 3" class="step step-3">
+  <h2>🔹 Krok 3: Zbieranie Objawów</h2>
+  <p>📋 Lista objawów dla: <strong>{{ selectedAreaName }}</strong></p>
+  <div class="symptoms-list">
+    <h3>1. Ból w klatce piersiowej:</h3>
+    <label>
+      Lokalizacja:
+      <select name="chestPainLocation" [(ngModel)]="symptoms.chestPain.location">
+        <option value="centralny">Centralny</option>
+        <option value="lewy">Lewy</option>
+        <option value="prawy">Prawy</option>
+        <option value="promieniujący">Promieniujący</option>
+        <option value="nie wiem">Nie wiem</option>
+      </select>
+    </label>
+    <label>
+      Charakter:
+      <select name="chestPainCharacter" [(ngModel)]="symptoms.chestPain.character">
+        <option value="kłujący">Kłujący</option>
+        <option value="ściskający">Ściskający</option>
+        <option value="piekący">Piekący</option>
+        <option value="nie wiem">Nie wiem</option>
+      </select>
+    </label>
+    <label>
+      Nasilenie (1–10):
+      <input name="chestPainIntensity" type="number" [(ngModel)]="symptoms.chestPain.intensity" min="1" max="10">
+    </label>
+
+    <h3>2. Duszność:</h3>
+    <label>
+      <input name="shortnessRest" type="checkbox" [(ngModel)]="symptoms.shortnessOfBreath.rest" 
+             [disabled]="symptoms.shortnessOfBreath.none" (change)="onShortnessNoneChange()">
+      W spoczynku
+    </label>
+    <label>
+      <input name="shortnessExercise" type="checkbox" [(ngModel)]="symptoms.shortnessOfBreath.exercise" 
+             [disabled]="symptoms.shortnessOfBreath.none" (change)="onShortnessNoneChange()">
+      Przy wysiłku
+    </label>
+    <label>
+      <input name="shortnessNone" type="checkbox" [(ngModel)]="symptoms.shortnessOfBreath.none" 
+             (change)="onShortnessNoneChange()">
+      Brak
+    </label>
+    <label>
+      <input name="shortnessDunno" type="checkbox" [(ngModel)]="symptoms.shortnessOfBreath.dunno" 
+             (change)="onShortnessNoneChange()">
+      Nie wiem
+    </label>
+
+    <h3>3. Kaszel:</h3>
+    <label>
+      <input name="coughDry" type="radio" [(ngModel)]="symptoms.cough.type" value="dry" (change)="onCoughTypeChange()">
+      Suchy
+    </label>
+    <label>
+      <input name="coughWet" type="radio" [(ngModel)]="symptoms.cough.type" value="wet" (change)="onCoughTypeChange()">
+      Mokry
+    </label>
+    <label>
+      <input name="coughNone" type="radio" [(ngModel)]="symptoms.cough.type" value="none" (change)="onCoughTypeChange()">
+      Brak
+    </label>
+    <label>
+      <input name="coughBlood" type="checkbox" [(ngModel)]="symptoms.cough.blood" 
+             [disabled]="symptoms.cough.type === 'none' || symptoms.cough.type === 'dunno'">
+      Z krwią
+    </label>
+    <label>
+      <input name="coughDunno" type="radio" [(ngModel)]="symptoms.cough.type" value="dunno" (change)="onCoughTypeChange()">
+      Nie wiem
+    </label>
+    <p *ngIf="symptoms.cough.blood && symptoms.cough.type === 'dry'" class="warning">
+      ⚠️ Uwaga: Suchy kaszel z krwią może wskazywać na poważniejsze problemy zdrowotne.
+    </p>
+
+    <h3>4. Inne Objawy:</h3>
+    <label>
+      <input name="otherBreathingPain" type="checkbox" [(ngModel)]="symptoms.otherSymptoms.breathingPain" 
+             [disabled]="symptoms.otherSymptoms.none">
+      Ból przy oddychaniu
+    </label>
+    <label>
+      <input name="otherPalpitations" type="checkbox" [(ngModel)]="symptoms.otherSymptoms.palpitations" 
+             [disabled]="symptoms.otherSymptoms.none">
+      Kołatanie serca
+    </label>
+    <label>
+      <input name="otherColdSweats" type="checkbox" [(ngModel)]="symptoms.otherSymptoms.coldSweats" 
+             [disabled]="symptoms.otherSymptoms.none">
+      Zimne poty
+    </label>
+    <label>
+      <input name="otherDizziness" type="checkbox" [(ngModel)]="symptoms.otherSymptoms.dizziness" 
+             [disabled]="symptoms.otherSymptoms.none">
+      Zawroty głowy
+    </label>
+    <label>
+      <input name="otherFever" type="checkbox" [(ngModel)]="symptoms.otherSymptoms.fever" 
+             [disabled]="symptoms.otherSymptoms.none">
+      Gorączka
+    </label>
+    <label>
+      <input name="otherNausea" type="checkbox" [(ngModel)]="symptoms.otherSymptoms.nausea" 
+             [disabled]="symptoms.otherSymptoms.none">
+      Nudności
+    </label>
+    <label>
+      <input name="otherNone" type="checkbox" [(ngModel)]="symptoms.otherSymptoms.none" 
+             (change)="onOtherSymptomsNoneChange()">
+      Brak
+    </label>
+
+    <h3>5. 🩸 Nawrót Kapilarny:</h3>
+    <p>Znajdź dobrze oświetlone miejsce i wykonaj następujące kroki:</p>
+    <ol>
+      <li>Uciskaj opuszek przez 5 sekund, aż zbieleje.</li>
+      <li>Puść i obserwuj, jak szybko wraca jego naturalny kolor.</li>
+      <li>Zmierz czas (w sekundach).</li>
+    </ol>
+    <label>
+      Wynik testu (sekundy):
+      <input name="capillaryRefillTime" type="number" [(ngModel)]="symptoms.capillaryRefillTime">
+    </label>
+    <p>
+      Wynik:
+      <span *ngIf="symptoms.capillaryRefillTime !== null">
+        {{ symptoms.capillaryRefillTime <= 2 ? '✅ Prawidłowy' : '❌ Nieprawidłowy' }}
+      </span>
+    </p>
+    <button (click)="goToStep(4)">Dalej</button>
+  </div>
+</div>
+
+<!-- Krok 4: Historia Medyczna i Dodatkowe Pytania + SI -->
+<div *ngIf="currentStep === 4" class="step step-4">
+  <form class="medical-form">
+    <h2>🔹 Krok 4: Historia Medyczna i Dodatkowe Pytania</h2>
+    
+    <h3>1. Choroby przewlekłe:</h3>
+    <label>
+      <input name="hypertension" type="checkbox" [(ngModel)]="medicalHistory.hypertension">
+      Nadciśnienie
+    </label>
+    <label>
+      <input name="diabetes" type="checkbox" [(ngModel)]="medicalHistory.diabetes">
+      Cukrzyca
+    </label>
+    <label>
+      <input name="asthma" type="checkbox" [(ngModel)]="medicalHistory.asthma">
+      Astma
+    </label>
+    <label>
+      <input name="heartDisease" type="checkbox" [(ngModel)]="medicalHistory.heartDisease">
+      Choroby serca
+    </label>
+    <label>
+      <input name="thyroidIssues" type="checkbox" [(ngModel)]="medicalHistory.thyroidIssues">
+      Problemy z tarczycą
+    </label>
+    
+    <h3>2. Przyjmowane leki:</h3>
+    <label>
+      <input name="takesMedication" type="checkbox" [(ngModel)]="medicalHistory.takesMedication">
+      Przyjmujesz leki regularnie?
+    </label>
+    <label *ngIf="medicalHistory.takesMedication">
+      Szczegóły leków:
+      <input name="medicationDetails" type="text" [(ngModel)]="medicalHistory.medicationDetails">
+    </label>
+    
+    <h3>3. Parametry zdrowotne:</h3>
+    <label>
+      Ciśnienie krwi:
+      <input name="bloodPressure" type="text" [(ngModel)]="medicalHistory.bloodPressure">
+    </label>
+    <label>
+      Saturacja:
+      <input name="saturation" type="number" [(ngModel)]="medicalHistory.saturation">
+    </label>
+    <label>
+      Tętno:
+      <input name="heartRate" type="number" [(ngModel)]="medicalHistory.heartRate">
+    </label>
+    <label>
+      Poziom glukozy:
+      <input name="glucoseLevel" type="number" [(ngModel)]="medicalHistory.glucoseLevel">
+    </label>
+    
+    <h3>4. Czas trwania objawów:</h3>
+    <label>
+      <select name="symptomDuration" [(ngModel)]="medicalHistory.symptomDuration">
+        <option value="" disabled selected>Wybierz czas trwania objawów</option>
+        <option value="short">Mniej niż 1 godzina</option>
+        <option value="medium">1–24 godziny</option>
+        <option value="long">Ponad 24 godziny</option>
+      </select>
+    </label>
+    
+    <!-- Pytanie o SI -->
+    <h3>Dodatkowe pytanie:</h3>
+    <label>
+      <input name="aiPrediction" type="checkbox" [(ngModel)]="aiPrediction">
+      Czy chcesz, aby Sztuczna Inteligencja przewidziała chorobę?
+    </label>
+    <div *ngIf="aiPrediction">
+      <label>
+        Opis objawów (wypisz dokładne objawy, każdy oddzielając przecinkiem):<br>
+        <textarea name="opisObjawow" [(ngModel)]="opisObjawow" rows="4" cols="50"></textarea>
+      </label>
+    </div>
+    
+    <button type="button" (click)="submitMedicalHistory()">Dalej</button>
+  </form>
+</div>
+
+<!-- Krok 5: Podsumowanie i (lokalna) predykcja -->
+<div *ngIf="currentStep === 5" class="step step-5">
+  <h2>🔹 Krok 5: Podsumowanie i predykcja</h2>
+  <p>Twoje dane <strong>nie zostaną</strong> zapisane w bazie. Zostaną użyte tylko do lokalnej analizy.</p>
+  
+  <!-- Przycisk do obliczania wyniku -->
+  <button (click)="computeResultLocally()">Oblicz wynik</button>
+
+  <!-- Loader - animacja "myślenia" -->
+  <div *ngIf="isComputing" class="loader-overlay">
+    <div class="loader"></div>
+    <p>Proszę czekać, trwa analiza...</p>
+  </div>
+
+  <!-- Sekcja z wynikami (pokazywana gdy isComputing = false) -->
+  <div *ngIf="(!isComputing) && (predictedTriage || predictedDisease)" class="analysis-results">
+    <h3 class="analysis-header">Wyniki lokalnej analizy:</h3>
+    
+    <!-- Karta z wynikami -->
+    <div class="result-card">
+      <div class="result-item">
+        <strong>TRIAGE:</strong>
+        <span
+        [ngClass]="{
+          'triage-blue':   predictedTriage === 'Niebieski',
+          'triage-green':  predictedTriage === 'Zielony',
+          'triage-yellow': predictedTriage === 'Żółty',
+          'triage-orange': predictedTriage === 'Pomarańczowy',
+          'triage-red':    predictedTriage === 'Czerwony'
+        }"
+      >
+        {{ predictedTriage }}
+      </span>
+      </div>
+
+      <div *ngIf="predictedDisease" class="result-item" style="flex-direction: column;">
+        <strong>Choroba:</strong>
+        <span>{{ predictedDisease }}</span>
+      </div>
+      
+      <div *ngIf="triageGuide" class="result-item" style="flex-direction: column;">
+        <strong>Działanie:</strong>
+        <span>{{ triageGuide }}</span>
+      </div>
+              
+    </div>
+
+    <!-- Dodatkowa logika dla "Pomarańczowego" -->
+    <div *ngIf="predictedTriage === 'Pomarańczowy'" class="result-extra">
+      <p><strong>Czy jesteś w stanie dotrzeć tam samodzielnie?</strong></p>
+      <button (click)="setCanReachSor(true)">Tak</button>
+      <button (click)="setCanReachSor(false)">Nie</button>
+
+      <div *ngIf="canReachSor === true">
+        <p>Mapa SOR:</p>
+        <div class="map-sor-container">
+          <iframe
+            width="600"
+            height="400"
+            src="https://pacjent.gov.pl/szpitalny-oddzial-ratunkowy-sor"
+            style="border:0;"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+      <div *ngIf="canReachSor === false" style="margin-top:0.5rem;">
+        <p>Zadzwoń pod numer 112 i poproś o karetkę!!!</p>
+      </div>
+    </div>
+  </div>
+
+  <button (click)="resetForm()" style="margin-top:1rem;">Zresetuj</button>
+</div>

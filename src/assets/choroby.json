@@ -1,0 +1,1487 @@
+[
+  {
+    "icd_code": "S20",
+    "nazwa": "Powierzchowne urazy klatki piersiowej",
+    "objawy": [
+      "ból w okolicy urazu",
+      "siniaki",
+      "obrzęk",
+      "lekki dyskomfort",
+      "wrażliwość przy dotyku"
+    ]
+  },
+  {
+    "icd_code": "S21",
+    "nazwa": "Otwarta rana klatki piersiowej",
+    "objawy": [
+      "krwawienie",
+      "ból w rejonie rany",
+      "widoczna rana",
+      "ryzyko zakażenia",
+      "tkliwość tkanek w okolicy rany"
+    ]
+  },
+  {
+    "icd_code": "S22",
+    "nazwa": "Złamania żeber, mostka i kręgosłupa piersiowego",
+    "objawy": [
+      "silny ból",
+      "trudności w oddychaniu",
+      "obrzęk",
+      "siniaki",
+      "zwiększony ból przy ruchu"
+    ]
+  },
+  {
+    "icd_code": "S23",
+    "nazwa": "Zwichnięcia, skręcenia i naderwania stawów klatki piersiowej",
+    "objawy": [
+      "ból",
+      "ograniczenie ruchomości",
+      "obrzęk",
+      "ból przy głębokim wdechu",
+      "sztywność klatki piersiowej"
+    ]
+  },
+  {
+    "icd_code": "S24",
+    "nazwa": "Urazy nerwów i rdzenia kręgowego (odc. piersiowy)",
+    "objawy": [
+      "silny ból",
+      "utrata czucia",
+      "paraliż częściowy",
+      "mrowienie kończyn",
+      "nasilanie się objawów przy ruchu"
+    ]
+  },
+  {
+    "icd_code": "S25",
+    "nazwa": "Urazy naczyń krwionośnych klatki piersiowej",
+    "objawy": [
+      "nagły ostry ból",
+      "krwotok wewnętrzny",
+      "objawy wstrząsu",
+      "bladość skóry",
+      "uczucie pulsowania w miejscu urazu"
+    ]
+  },
+  {
+    "icd_code": "S26",
+    "nazwa": "Urazy serca",
+    "objawy": [
+      "ból w klatce",
+      "omdlenia",
+      "zaburzenia rytmu",
+      "uczucie ucisku w piersiach",
+      "blada lub sina skóra"
+    ]
+  },
+  {
+    "icd_code": "S27",
+    "nazwa": "Urazy innych narządów klatki piersiowej",
+    "objawy": [
+      "ból",
+      "duszność",
+      "krwotok",
+      "kłucie podczas oddychania",
+      "niskie ciśnienie krwi"
+    ]
+  },
+  {
+    "icd_code": "S28",
+    "nazwa": "Zmiażdżenie klatki piersiowej",
+    "objawy": [
+      "bardzo silny ból",
+      "trudności w oddychaniu",
+      "deformacja klatki",
+      "sztywność przy dotyku",
+      "możliwy wstrząs"
+    ]
+  },
+  {
+    "icd_code": "S29",
+    "nazwa": "Inne i nieokreślone urazy klatki piersiowej",
+    "objawy": [
+      "ból",
+      "zaburzenia czucia",
+      "powierzchowny uraz",
+      "zasinienie",
+      "drobne skaleczenia"
+    ]
+  },
+  {
+    "icd_code": "J00",
+    "nazwa": "Ostry nieżyt nosa",
+    "objawy": [
+      "katar",
+      "kichanie",
+      "ból gardła",
+      "łagodny ból głowy",
+      "drapanie w nosie"
+    ]
+  },
+  {
+    "icd_code": "J01",
+    "nazwa": "Ostre zapalenie zatok",
+    "objawy": [
+      "ból zatok",
+      "ból głowy",
+      "katar",
+      "uczucie zatkanego nosa",
+      "zwiększona wydzielina śluzowa"
+    ]
+  },
+  {
+    "icd_code": "J02",
+    "nazwa": "Ostre zapalenie gardła",
+    "objawy": [
+      "ból gardła",
+      "trudności przy przełykaniu",
+      "gorączka",
+      "zaczerwienienie gardła",
+      "osłabienie"
+    ]
+  },
+  {
+    "icd_code": "J03",
+    "nazwa": "Ostre zapalenie migdałków",
+    "objawy": [
+      "silny ból gardła",
+      "obrzęk migdałków",
+      "trudności przy przełykaniu",
+      "gorączka",
+      "nalot na migdałkach"
+    ]
+  },
+  {
+    "icd_code": "J04",
+    "nazwa": "Ostre zapalenie krtani i tchawicy",
+    "objawy": [
+      "chrypka",
+      "trudności w oddychaniu",
+      "kaszel",
+      "ból krtani",
+      "zwężenie dróg oddechowych"
+    ]
+  },
+  {
+    "icd_code": "J06",
+    "nazwa": "Ostre infekcje górnych dróg oddechowych, niesklasyfikowane",
+    "objawy": [
+      "kaszel",
+      "ból gardła",
+      "gorączka",
+      "katar",
+      "uczucie drapania w gardle"
+    ]
+  },
+  {
+    "icd_code": "J09",
+    "nazwa": "Grypa, zidentyfikowana",
+    "objawy": [
+      "wysoka gorączka",
+      "ból mięśni",
+      "osłabienie",
+      "dreszcze",
+      "uciążliwy kaszel"
+    ]
+  },
+  {
+    "icd_code": "J10",
+    "nazwa": "Grypa, inna",
+    "objawy": [
+      "wysoka gorączka",
+      "ból mięśni",
+      "osłabienie",
+      "dreszcze",
+      "ból w klatce przy kaszlu"
+    ]
+  },
+  {
+    "icd_code": "J11",
+    "nazwa": "Grypa, wirus nieokreślony",
+    "objawy": [
+      "wysoka gorączka",
+      "ból mięśni",
+      "osłabienie",
+      "poty nocne",
+      "złe samopoczucie"
+    ]
+  },
+  {
+    "icd_code": "J12",
+    "nazwa": "Wirusowe zapalenie płuc",
+    "objawy": [
+      "gorączka",
+      "kaszel",
+      "duszność",
+      "ból w klatce przy głębokim oddechu",
+      "uczucie zmęczenia"
+    ]
+  },
+  {
+    "icd_code": "J13",
+    "nazwa": "Zapalenie płuc spowodowane Streptococcus pneumoniae",
+    "objawy": [
+      "kaszel",
+      "gorączka",
+      "duszność",
+      "ból w klatce",
+      "ropna wydzielina"
+    ]
+  },
+  {
+    "icd_code": "J14",
+    "nazwa": "Zapalenie płuc spowodowane Haemophilus influenzae",
+    "objawy": [
+      "kaszel",
+      "gorączka",
+      "duszność",
+      "ból przy oddychaniu",
+      "świsty oskrzelowe"
+    ]
+  },
+  {
+    "icd_code": "J15",
+    "nazwa": "Bakteryjne zapalenie płuc, niesklasyfikowane",
+    "objawy": [
+      "wysoka gorączka",
+      "kaszel",
+      "duszność",
+      "obfita wydzielina ropna",
+      "uczucie rozbicia"
+    ]
+  },
+  {
+    "icd_code": "J16",
+    "nazwa": "Zapalenie płuc spowodowane innymi drobnoustrojami",
+    "objawy": [
+      "gorączka",
+      "kaszel",
+      "duszność",
+      "ból w klatce",
+      "przyspieszony oddech"
+    ]
+  },
+  {
+    "icd_code": "J17",
+    "nazwa": "Zapalenie płuc w chorobach sklasyfikowanych gdzie indziej",
+    "objawy": [
+      "kaszel",
+      "gorączka",
+      "ból przy kaszlu",
+      "zwiększone wydzielanie śluzu",
+      "odczuwalne osłabienie"
+    ]
+  },
+  {
+    "icd_code": "J18",
+    "nazwa": "Zapalenie płuc, nieokreślone",
+    "objawy": [
+      "kaszel",
+      "gorączka",
+      "duszność",
+      "świszczący oddech",
+      "poty nocne"
+    ]
+  },
+  {
+    "icd_code": "J20",
+    "nazwa": "Ostre zapalenie oskrzeli",
+    "objawy": [
+      "kaszel",
+      "duszność",
+      "ból w klatce",
+      "trudności w odkrztuszaniu",
+      "świszczący oddech"
+    ]
+  },
+  {
+    "icd_code": "J21",
+    "nazwa": "Ostre zapalenie oskrzelików",
+    "objawy": [
+      "kaszel",
+      "trudności w oddychaniu",
+      "świszczący oddech",
+      "gorączka",
+      "uczucie ucisku w klatce"
+    ]
+  },
+  {
+    "icd_code": "J22",
+    "nazwa": "Ostre infekcje dolnych dróg oddechowych, niesklasyfikowane",
+    "objawy": [
+      "kaszel",
+      "gorączka",
+      "duszność",
+      "osłabienie",
+      "ból mięśni"
+    ]
+  },
+  {
+    "icd_code": "J40",
+    "nazwa": "Przewlekłe zapalenie oskrzeli, niesklasyfikowane",
+    "objawy": [
+      "przewlekły kaszel",
+      "duszność",
+      "zmęczenie",
+      "poranny kaszel z wydzieliną",
+      "częste infekcje"
+    ]
+  },
+  {
+    "icd_code": "J41",
+    "nazwa": "Proste przewlekłe zapalenie oskrzeli",
+    "objawy": [
+      "przewlekły kaszel",
+      "śluz",
+      "duszność",
+      "większe nasilenie rano",
+      "czasem świsty w płucach"
+    ]
+  },
+  {
+    "icd_code": "J42",
+    "nazwa": "Niespecyficzne przewlekłe zapalenie oskrzeli",
+    "objawy": [
+      "przewlekły kaszel",
+      "ograniczenie oddychania",
+      "skrócenie oddechu przy wysiłku",
+      "osłabienie",
+      "dławiące uczucie w piersiach"
+    ]
+  },
+  {
+    "icd_code": "J43",
+    "nazwa": "Rozedma płuc",
+    "objawy": [
+      "trudności w oddychaniu",
+      "przewlekły kaszel",
+      "utrata masy ciała",
+      "szybkie męczenie się",
+      "zmniejszona wydolność wysiłkowa"
+    ]
+  },
+  {
+    "icd_code": "J44",
+    "nazwa": "Inne przewlekłe obturacyjne choroby płuc (POChP)",
+    "objawy": [
+      "przewlekły kaszel",
+      "duszność",
+      "świszczący oddech",
+      "uczucie ściskania w klatce",
+      "nasilenie objawów przy wysiłku"
+    ]
+  },
+  {
+    "icd_code": "J45",
+    "nazwa": "Astma",
+    "objawy": [
+      "napady duszności",
+      "świszczący oddech",
+      "kaszel",
+      "uczucie ucisku w klatce",
+      "większe nasilenie nocne"
+    ]
+  },
+  {
+    "icd_code": "J46",
+    "nazwa": "Status asthmaticus",
+    "objawy": [
+      "ciężka duszność",
+      "brak reakcji na inhalatory",
+      "silny kaszel",
+      "sinica",
+      "przyspieszone tętno"
+    ]
+  },
+  {
+    "icd_code": "J47",
+    "nazwa": "Rozstrzenie oskrzeli",
+    "objawy": [
+      "przewlekły kaszel",
+      "nawracające infekcje",
+      "obfita wydzielina",
+      "duszność przy wysiłku",
+      "trudności w wykrztuszaniu"
+    ]
+  },
+  {
+    "icd_code": "J60",
+    "nazwa": "Pylica płuc",
+    "objawy": [
+      "przewlekły kaszel",
+      "duszność",
+      "utrata masy ciała",
+      "męczliwość",
+      "bolesność w klatce piersiowej"
+    ]
+  },
+  {
+    "icd_code": "J61",
+    "nazwa": "Pylica azbestowa",
+    "objawy": [
+      "przewlekły kaszel",
+      "duszność",
+      "utrata masy ciała",
+      "osłabienie",
+      "czasem krwioplucie"
+    ]
+  },
+  {
+    "icd_code": "J62",
+    "nazwa": "Inna pylica",
+    "objawy": [
+      "przewlekły kaszel",
+      "duszność",
+      "przyspieszone tętno przy wysiłku",
+      "zmniejszona tolerancja wysiłku",
+      "okresowe kłucie w klatce"
+    ]
+  },
+  {
+    "icd_code": "J63",
+    "nazwa": "Inne pylice",
+    "objawy": [
+      "przewlekły kaszel",
+      "duszność",
+      "pogorszenie wydolności płuc",
+      "nieregularne gorączki",
+      "męczliwość"
+    ]
+  },
+  {
+    "icd_code": "J64",
+    "nazwa": "Pylica, niesklasyfikowana",
+    "objawy": [
+      "suchy kaszel",
+      "objawy zapalne płuc",
+      "uczucie pieczenia w drogach oddechowych",
+      "narastająca duszność",
+      "drażniące uczucie w gardle"
+    ]
+  },
+  {
+    "icd_code": "J65",
+    "nazwa": "Pylica związana z narażeniem na pyły organiczne",
+    "objawy": [
+      "przewlekły kaszel",
+      "duszność",
+      "zmęczenie",
+      "uogólnione osłabienie",
+      "sporadyczne zawroty głowy"
+    ]
+  },
+  {
+    "icd_code": "J66",
+    "nazwa": "Pylica - nieokreślona",
+    "objawy": [
+      "przewlekły kaszel",
+      "duszność",
+      "poranna chrypka",
+      "czasami bóle mięśni",
+      "potliwość"
+    ]
+  },
+  {
+    "icd_code": "J67",
+    "nazwa": "Inne choroby pylicowe",
+    "objawy": [
+      "kaszel",
+      "duszność",
+      "podwyższona temperatura ciała",
+      "ucisk w klatce",
+      "zwiększona ilość wydzieliny"
+    ]
+  },
+  {
+    "icd_code": "J68",
+    "nazwa": "Choroby pylicowe związane z określonymi substancjami",
+    "objawy": [
+      "przewlekły kaszel",
+      "duszność",
+      "skłonność do infekcji",
+      "częste zapalenia oskrzeli",
+      "ogólna słabość"
+    ]
+  },
+  {
+    "icd_code": "J69",
+    "nazwa": "Inne choroby pylicowe",
+    "objawy": [
+      "przewlekły kaszel",
+      "duszność",
+      "sporadyczne krwioplucie",
+      "długotrwałe zmęczenie",
+      "ograniczenie aktywności"
+    ]
+  },
+  {
+    "icd_code": "J70",
+    "nazwa": "Inne choroby płuc wywołane czynnikami zewnętrznymi",
+    "objawy": [
+      "przewlekły kaszel",
+      "duszność",
+      "nadreaktywność dróg oddechowych",
+      "świsty",
+      "większa męczliwość"
+    ]
+  },
+  {
+    "icd_code": "J80",
+    "nazwa": "Zespół ostrej niewydolności oddechowej (ARDS)",
+    "objawy": [
+      "silna duszność",
+      "trudności w oddychaniu",
+      "niskie ciśnienie",
+      "wysoka częstość oddechów",
+      "pogorszona saturacja krwi"
+    ]
+  },
+  {
+    "icd_code": "J81",
+    "nazwa": "Obustronny wysięk opłucnowy",
+    "objawy": [
+      "duszność",
+      "ucisk w klatce",
+      "kaszel",
+      "pieczenie przy głębokim wdechu",
+      "osłabienie siły oddechowej"
+    ]
+  },
+  {
+    "icd_code": "J82",
+    "nazwa": "Inne wysięki opłucnowe",
+    "objawy": [
+      "duszność",
+      "ból w klatce",
+      "kaszel",
+      "świsty podczas oddychania",
+      "częste uczucie zmęczenia"
+    ]
+  },
+  {
+    "icd_code": "J84",
+    "nazwa": "Choroby śródmiąższowe płuc",
+    "objawy": [
+      "suchy kaszel",
+      "duszność",
+      "męczliwość",
+      "ograniczenie pojemności płuc",
+      "uczucie kłucia przy wdechu"
+    ]
+  },
+  {
+    "icd_code": "J85",
+    "nazwa": "Ropień płuc",
+    "objawy": [
+      "wysoka gorączka",
+      "kaszel",
+      "ból w klatce",
+      "duszność",
+      "ropna wydzielina o nieprzyjemnym zapachu"
+    ]
+  },
+  {
+    "icd_code": "J86",
+    "nazwa": "Inne ropnie płuc",
+    "objawy": [
+      "kaszel",
+      "gorączka",
+      "ból w klatce",
+      "nasilone pocenie",
+      "duszność przy wysiłku"
+    ]
+  },
+  {
+    "icd_code": "J90",
+    "nazwa": "Płyn w opłucnej",
+    "objawy": [
+      "ból w klatce",
+      "duszność",
+      "kaszel",
+      "uczucie kłucia przy ruchu",
+      "osłabienie oddechu"
+    ]
+  },
+  {
+    "icd_code": "J91",
+    "nazwa": "Przyklejone opłucne",
+    "objawy": [
+      "duszność",
+      "ból w klatce",
+      "ograniczenie ruchomości",
+      "uczucie ciągnięcia w opłucnej",
+      "nawracające infekcje"
+    ]
+  },
+  {
+    "icd_code": "J92",
+    "nazwa": "Opłucna blizna",
+    "objawy": [
+      "ograniczenie ruchomości klatki",
+      "duszność",
+      "uczucie sztywności",
+      "lekkie bóle przy oddychaniu",
+      "przewlekłe zmęczenie"
+    ]
+  },
+  {
+    "icd_code": "J93",
+    "nazwa": "Inne zaburzenia opłucnej",
+    "objawy": [
+      "ból w klatce",
+      "trudności w oddychaniu",
+      "uczucie braku powietrza",
+      "powiększone przestrzenie międzyżebrowe",
+      "czasem przyspieszone tętno"
+    ]
+  },
+  {
+    "icd_code": "J94",
+    "nazwa": "Inne schorzenia opłucnej",
+    "objawy": [
+      "kaszel",
+      "ból w klatce",
+      "dyskomfort przy głębokim wdechu",
+      "sporadyczna gorączka",
+      "duszność przy wysiłku"
+    ]
+  },
+  {
+    "icd_code": "J95",
+    "nazwa": "Powikłania pooperacyjne dróg oddechowych",
+    "objawy": [
+      "gorączka",
+      "kaszel",
+      "duszność",
+      "zwiększone wydzielanie śluzu",
+      "ból pooperacyjny w klatce"
+    ]
+  },
+  {
+    "icd_code": "J96",
+    "nazwa": "Niewydolność oddechowa",
+    "objawy": [
+      "silna duszność",
+      "trudności w oddychaniu",
+      "zmniejszona saturacja",
+      "bladość skóry",
+      "możliwe przyspieszone bicie serca"
+    ]
+  },
+  {
+    "icd_code": "J98",
+    "nazwa": "Inne choroby układu oddechowego",
+    "objawy": [
+      "różnorodne dolegliwości oddechowe",
+      "kaszel",
+      "duszność",
+      "okresowe kłucie w płucach",
+      "uczucie ciężaru w klatce"
+    ]
+  },
+  {
+    "icd_code": "J99",
+    "nazwa": "Choroby oddechowe w chorobach sklasyfikowanych gdzie indziej",
+    "objawy": [
+      "duszność",
+      "ból",
+      "męczliwość",
+      "kaszel",
+      "możliwe dodatkowe symptomy zależne od choroby podstawowej"
+    ]
+  },
+  {
+    "icd_code": "I00-I99",
+    "nazwa": "Choroby układu krążenia - Inne",
+    "objawy": [
+      "ból w klatce przy wysiłku",
+      "duszność o zmiennym nasileniu",
+      "zmęczenie",
+      "bóle głowy okresowe",
+      "nietypowe kołatanie serca"
+    ]
+  },
+  {
+    "icd_code": "I10",
+    "nazwa": "Nadciśnienie pierwotne",
+    "objawy": [
+      "ból głowy",
+      "zmęczenie",
+      "uczucie pulsowania w skroniach",
+      "zawroty głowy przy wstawaniu",
+      "podwyższone ciśnienie tętnicze"
+    ]
+  },
+  {
+    "icd_code": "I20",
+    "nazwa": "Dławica piersiowa",
+    "objawy": [
+      "ból w klatce",
+      "duszność",
+      "uczucie ucisku",
+      "ból promieniujący do ramienia",
+      "czasami pocenie się"
+    ]
+  },
+  {
+    "icd_code": "I21",
+    "nazwa": "Ostry zawał serca",
+    "objawy": [
+      "silny ból w klatce",
+      "duszność",
+      "nadmierne pocenie się",
+      "nudności",
+      "uczucie lęku"
+    ]
+  },
+  {
+    "icd_code": "I22",
+    "nazwa": "Powtórny zawał serca",
+    "objawy": [
+      "ból w klatce",
+      "duszność",
+      "zmęczenie",
+      "podwyższone tętno",
+      "nawracający dyskomfort za mostkiem"
+    ]
+  },
+  {
+    "icd_code": "I23",
+    "nazwa": "Powikłania zawału serca",
+    "objawy": [
+      "ból",
+      "niewydolność serca",
+      "obrzęki",
+      "kołatanie serca",
+      "wzmożona potliwość"
+    ]
+  },
+  {
+    "icd_code": "I24",
+    "nazwa": "Inne ostrze zawały",
+    "objawy": [
+      "ból w klatce",
+      "duszność",
+      "osłabienie",
+      "piekące uczucie w okolicy mostka",
+      "kołatanie przy wysiłku"
+    ]
+  },
+  {
+    "icd_code": "I25",
+    "nazwa": "Przewlekła choroba wieńcowa",
+    "objawy": [
+      "przewlekły ból w klatce",
+      "duszność",
+      "zmęczenie",
+      "okresowe kłucie",
+      "gorsza wydolność wysiłkowa"
+    ]
+  },
+  {
+    "icd_code": "I30",
+    "nazwa": "Zapalenie osierdzia",
+    "objawy": [
+      "ból w klatce",
+      "gorączka",
+      "duszność",
+      "kłucie przy leżeniu",
+      "uczucie tarcia w okolicy serca"
+    ]
+  },
+  {
+    "icd_code": "I31",
+    "nazwa": "Inne choroby osierdzia",
+    "objawy": [
+      "ból w klatce",
+      "osłabienie",
+      "drobne kołatania",
+      "zmniejszona tolerancja wysiłku",
+      "dyskomfort przy głębokim oddechu"
+    ]
+  },
+  {
+    "icd_code": "I32",
+    "nazwa": "Zapalenie mięśnia sercowego",
+    "objawy": [
+      "ból w klatce",
+      "gorączka",
+      "osłabienie",
+      "objawy niewydolności serca",
+      "czasem duszność w spoczynku"
+    ]
+  },
+  {
+    "icd_code": "I33",
+    "nazwa": "Inne zapalenia mięśnia sercowego",
+    "objawy": [
+      "ból w klatce",
+      "osłabienie",
+      "duszność",
+      "uczucie palenia w mostku",
+      "nieregularne bicie serca"
+    ]
+  },
+  {
+    "icd_code": "I34",
+    "nazwa": "Zapalenie zastawek serca",
+    "objawy": [
+      "ból w klatce",
+      "duszność",
+      "zmęczenie",
+      "wolniejsze napełnianie komór",
+      "czasami obrzęki kończyn"
+    ]
+  },
+  {
+    "icd_code": "I35",
+    "nazwa": "Inne choroby zastawek",
+    "objawy": [
+      "duszność",
+      "zmęczenie",
+      "ból w klatce",
+      "zawroty głowy przy wysiłku",
+      "kołatanie serca nocne"
+    ]
+  },
+  {
+    "icd_code": "I36",
+    "nazwa": "Inne choroby zastawek, inne",
+    "objawy": [
+      "duszność",
+      "zmęczenie",
+      "trudności w wysiłku",
+      "uczucie uścisku w gardle",
+      "skłonność do arytmii"
+    ]
+  },
+  {
+    "icd_code": "I37",
+    "nazwa": "Zaburzenia przepływu w sercu",
+    "objawy": [
+      "ból w klatce",
+      "duszność",
+      "zmęczenie",
+      "przelotne arytmie",
+      "uczucie ciężkości serca"
+    ]
+  },
+  {
+    "icd_code": "I38",
+    "nazwa": "Zapalenie mięśnia sercowego, nieokreślone",
+    "objawy": [
+      "ból w klatce",
+      "gorączka",
+      "osłabienie",
+      "przyspieszone tętno",
+      "rytm z nieregularnymi przerwami"
+    ]
+  },
+  {
+    "icd_code": "I39",
+    "nazwa": "Inne choroby serca",
+    "objawy": [
+      "ból w klatce",
+      "duszność",
+      "mrowienie w lewym ramieniu",
+      "przemijające zawroty głowy",
+      "poty przy lekkim wysiłku"
+    ]
+  },
+  {
+    "icd_code": "I40",
+    "nazwa": "Zapalenie wsierdzia",
+    "objawy": [
+      "gorączka",
+      "ból w klatce",
+      "duszność",
+      "tkliwość okolicy serca",
+      "kołatania przy spoczynku"
+    ]
+  },
+  {
+    "icd_code": "I42",
+    "nazwa": "Kardiomiopatia",
+    "objawy": [
+      "osłabienie",
+      "duszność",
+      "zmęczenie",
+      "obrzęki",
+      "ciężar w klatce"
+    ]
+  },
+  {
+    "icd_code": "I43",
+    "nazwa": "Inne kardiomiopatie",
+    "objawy": [
+      "duszność",
+      "zmęczenie",
+      "nierówne tętno",
+      "obniżona tolerancja wysiłku",
+      "uczucie ucisku"
+    ]
+  },
+  {
+    "icd_code": "I44",
+    "nazwa": "Blok serca",
+    "objawy": [
+      "omdlenia",
+      "zmęczenie",
+      "zaburzenia rytmu",
+      "nieregularny rytm serca",
+      "uczucie kołatania przy ruchu"
+    ]
+  },
+  {
+    "icd_code": "I45",
+    "nazwa": "Zaburzenia rytmu serca",
+    "objawy": [
+      "kołatanie serca",
+      "duszność",
+      "zmęczenie",
+      "gwałtowne uderzenia serca",
+      "czasami brak tętna obwodowego"
+    ]
+  },
+  {
+    "icd_code": "I46",
+    "nazwa": "Nagłe zatrzymanie krążenia",
+    "objawy": [
+      "nagły brak przytomności",
+      "brak tętna",
+      "bezdech",
+      "utrata odruchów",
+      "natychmiastowe zagrożenie życia"
+    ]
+  },
+  {
+    "icd_code": "I47",
+    "nazwa": "Nadmierna tachykardia",
+    "objawy": [
+      "przyspieszone bicie serca",
+      "duszność",
+      "ból głowy przy ataku",
+      "uczucie niepokoju",
+      "potliwość"
+    ]
+  },
+  {
+    "icd_code": "I48",
+    "nazwa": "Migotanie przedsionków",
+    "objawy": [
+      "nierównomierne bicie serca",
+      "zmęczenie",
+      "duszność",
+      "zawroty głowy",
+      "przyspieszone tętno"
+    ]
+  },
+  {
+    "icd_code": "I49",
+    "nazwa": "Inne zaburzenia rytmu serca",
+    "objawy": [
+      "nieregularne bicie serca",
+      "osłabienie",
+      "przerwy w rytmie",
+      "czasem nagłe kołatanie",
+      "krótkotrwałe zawroty głowy"
+    ]
+  },
+  {
+    "icd_code": "I50",
+    "nazwa": "Niewydolność serca",
+    "objawy": [
+      "duszność",
+      "obrzęki",
+      "zmęczenie",
+      "przyspieszone bicie serca",
+      "napady kaszlu nocą"
+    ]
+  },
+  {
+    "icd_code": "I51",
+    "nazwa": "Inne choroby serca",
+    "objawy": [
+      "duszność",
+      "zmęczenie",
+      "ból w klatce",
+      "uczucie słabości",
+      "zwolniona akcja serca w spoczynku"
+    ]
+  },
+  {
+    "icd_code": "I60",
+    "nazwa": "Choroby mózgowych naczyń",
+    "objawy": [
+      "ból głowy",
+      "zawroty głowy",
+      "zmęczenie",
+      "czasami drętwienie kończyn",
+      "przejściowe mroczki przed oczami"
+    ]
+  },
+  {
+    "icd_code": "I61",
+    "nazwa": "Krwotok mózgowy",
+    "objawy": [
+      "nagły, silny ból głowy",
+      "utrata przytomności",
+      "osłabienie",
+      "możliwy paraliż połowiczy",
+      "nudności przy wstawaniu"
+    ]
+  },
+  {
+    "icd_code": "I62",
+    "nazwa": "Inne krwotoki mózgowe",
+    "objawy": [
+      "ból głowy",
+      "nudności",
+      "wymioty",
+      "zaburzenia widzenia",
+      "chwilowa dezorientacja"
+    ]
+  },
+  {
+    "icd_code": "I63",
+    "nazwa": "Niedokrwienie mózgu",
+    "objawy": [
+      "nagłe objawy neurologiczne",
+      "osłabienie",
+      "zaburzenia mowy",
+      "opadanie kącika ust",
+      "trudności w poruszaniu kończynami"
+    ]
+  },
+  {
+    "icd_code": "I64",
+    "nazwa": "Udar mózgu, nieokreślony",
+    "objawy": [
+      "objawy neurologiczne",
+      "osłabienie",
+      "zaburzenia mowy",
+      "zaburzenia równowagi",
+      "zawroty głowy"
+    ]
+  },
+  {
+    "icd_code": "I65",
+    "nazwa": "Zwężenie naczyń szyjnych",
+    "objawy": [
+      "ból głowy",
+      "zaburzenia widzenia",
+      "zwolniony przepływ krwi w tętnicach szyjnych",
+      "mogące wystąpić omdlenia",
+      "mrowienie twarzy"
+    ]
+  },
+  {
+    "icd_code": "I66",
+    "nazwa": "Ostry udar mózgu",
+    "objawy": [
+      "nagłe objawy neurologiczne",
+      "paraliż",
+      "trudności w mowie",
+      "brak czucia w kończynach",
+      "czasowa utrata przytomności"
+    ]
+  },
+  {
+    "icd_code": "I67",
+    "nazwa": "Inne choroby naczyń mózgowych",
+    "objawy": [
+      "ból głowy",
+      "osłabienie",
+      "objawy neurologiczne",
+      "zaburzenia pamięci",
+      "splątanie"
+    ]
+  },
+  {
+    "icd_code": "I68",
+    "nazwa": "Inne zaburzenia naczyniowe mózgu",
+    "objawy": [
+      "objawy neurologiczne",
+      "zmęczenie",
+      "przejściowe niedowłady",
+      "zaburzenia koncentracji",
+      "bóle karku"
+    ]
+  },
+  {
+    "icd_code": "I69",
+    "nazwa": "Powikłania udaru",
+    "objawy": [
+      "trudności w mowie",
+      "paraliż",
+      "osłabienie",
+      "kłopoty z pamięcią",
+      "problemy z koordynacją ruchową"
+    ]
+  },
+  {
+    "icd_code": "I70",
+    "nazwa": "Miażdżyca tętnic",
+    "objawy": [
+      "często przebiega skrycie",
+      "ból w klatce przy wysiłku",
+      "zmęczenie nóg",
+      "zimne stopy",
+      "spowolnione tętno obwodowe"
+    ]
+  },
+  {
+    "icd_code": "I71",
+    "nazwa": "Tętniak aorty",
+    "objawy": [
+      "ból w klatce",
+      "utrata przytomności",
+      "objawy niewydolności krążenia",
+      "pulsujący obrzęk w okolicy aorty",
+      "nagłe osłabienie"
+    ]
+  },
+  {
+    "icd_code": "I72",
+    "nazwa": "Tętniaki innych naczyń",
+    "objawy": [
+      "ból",
+      "osłabienie",
+      "objawy niewydolności",
+      "obrzęk w miejscu tętniaka",
+      "zaburzenia czucia obwodowego"
+    ]
+  },
+  {
+    "icd_code": "I73",
+    "nazwa": "Choroby naczyń obwodowych",
+    "objawy": [
+      "ból nóg",
+      "zimne kończyny",
+      "osłabienie",
+      "chromanie przestankowe",
+      "problemy z krążeniem"
+    ]
+  },
+  {
+    "icd_code": "I74",
+    "nazwa": "Zatorowość tętnic obwodowych",
+    "objawy": [
+      "nagły ból nóg",
+      "bladość",
+      "utrata czucia",
+      "niemożność chodzenia",
+      "gwałtowne wychłodzenie kończyny"
+    ]
+  },
+  {
+    "icd_code": "I75",
+    "nazwa": "Inne choroby naczyń",
+    "objawy": [
+      "ból",
+      "zmęczenie",
+      "dyskomfort",
+      "sporadyczne skurcze mięśni",
+      "uczucie drętwienia"
+    ]
+  },
+  {
+    "icd_code": "I76",
+    "nazwa": "Zatorowość",
+    "objawy": [
+      "nagły ból",
+      "obrzęk",
+      "osłabienie",
+      "możliwa gorączka",
+      "zaburzenia krążenia w zajętej okolicy"
+    ]
+  },
+  {
+    "icd_code": "I77",
+    "nazwa": "Inne choroby naczyń",
+    "objawy": [
+      "ból",
+      "zmęczenie",
+      "uczucie ciężkości kończyn",
+      "zwiększone tętno przy wysiłku",
+      "wrażliwość na dotyk"
+    ]
+  },
+  {
+    "icd_code": "I78",
+    "nazwa": "Inne choroby naczyń",
+    "objawy": [
+      "ból",
+      "osłabienie",
+      "mrowienie w skórze",
+      "zaburzenia ukrwienia",
+      "drobne pajączki naczyniowe"
+    ]
+  },
+  {
+    "icd_code": "I79",
+    "nazwa": "Inne choroby układu krążenia",
+    "objawy": [
+      "duszność",
+      "ból w klatce",
+      "zmęczenie",
+      "mrowienie w palcach",
+      "zwiększona potliwość"
+    ]
+  },
+  {
+    "icd_code": "I80",
+    "nazwa": "Choroby żył",
+    "objawy": [
+      "obrzęki nóg",
+      "ból",
+      "uczucie ucisku",
+      "ciężkość w łydkach",
+      "zwiększone poszerzenie żył"
+    ]
+  },
+  {
+    "icd_code": "I81",
+    "nazwa": "Choroby żył wątroby",
+    "objawy": [
+      "obrzęk brzucha",
+      "żółtaczka",
+      "ból brzucha",
+      "uczucie rozpierania w prawym podżebrzu",
+      "ciemne zabarwienie moczu"
+    ]
+  },
+  {
+    "icd_code": "I82",
+    "nazwa": "Inne zakrzepice",
+    "objawy": [
+      "ból",
+      "obrzęk",
+      "zaczerwienienie",
+      "napięcie skóry",
+      "uczucie pieczenia"
+    ]
+  },
+  {
+    "icd_code": "I83",
+    "nazwa": "Żylaki kończyn dolnych",
+    "objawy": [
+      "opuchlizna",
+      "ból nóg",
+      "widoczne żyły",
+      "uczucie pieczenia łydek",
+      "zmęczenie pod koniec dnia"
+    ]
+  },
+  {
+    "icd_code": "I84",
+    "nazwa": "Inne choroby naczyń",
+    "objawy": [
+      "ból",
+      "osłabienie",
+      "trudność w chodzeniu",
+      "zaburzenia krążenia",
+      "mrowienie stóp"
+    ]
+  },
+  {
+    "icd_code": "I85",
+    "nazwa": "Inne choroby żył",
+    "objawy": [
+      "ból",
+      "obrzęk",
+      "słaby przepływ krwi",
+      "ciepłota skóry w okolicy zmienionej",
+      "dyskomfort przy staniu"
+    ]
+  },
+  {
+    "icd_code": "I86",
+    "nazwa": "Inne choroby naczyń",
+    "objawy": [
+      "ból",
+      "zmęczenie",
+      "obrzęki przy dłuższym staniu",
+      "sinienie skóry",
+      "uczucie mrowienia"
+    ]
+  },
+  {
+    "icd_code": "I87",
+    "nazwa": "Inne choroby obwodowe",
+    "objawy": [
+      "ból nóg",
+      "ucisk",
+      "zmęczenie",
+      "sinica przy wychłodzeniu",
+      "skłonność do skurczów nocnych"
+    ]
+  },
+  {
+    "icd_code": "I88",
+    "nazwa": "Inne zaburzenia",
+    "objawy": [
+      "różnorodne dolegliwości naczyniowe",
+      "osłabienie",
+      "gorączka możliwa",
+      "dyskomfort w obrębie kończyn",
+      "pobolewania stawów"
+    ]
+  },
+  {
+    "icd_code": "I89",
+    "nazwa": "Inne",
+    "objawy": [
+      "zmęczenie",
+      "uczucie ciężaru",
+      "wyczerpanie przy wysiłku",
+      "sporadyczne bóle",
+      "podatność na obrzęki"
+    ]
+  },
+  {
+    "icd_code": "I95",
+    "nazwa": "Hipotonia naczyniowa",
+    "objawy": [
+      "słaby puls",
+      "zawroty głowy",
+      "omdlenia przy nagłej zmianie pozycji",
+      "bladość skóry",
+      "ogólne osłabienie"
+    ]
+  },
+  {
+    "icd_code": "I96",
+    "nazwa": "Inne nieokreślone choroby układu krążenia",
+    "objawy": [
+      "osłabienie",
+      "drobne epizody tachykardii",
+      "szybkie męczenie się",
+      "kłucie w klatce",
+      "zawroty głowy"
+    ]
+  },
+  {
+    "icd_code": "I99",
+    "nazwa": "Inne choroby układu krążenia",
+    "objawy": [
+      "duszność",
+      "ból",
+      "uczucie ucisku",
+      "sporadyczne kołatanie serca",
+      "szybkie męczenie się"
+    ]
+  },
+  {
+    "icd_code": "C30",
+    "nazwa": "Nowotwór złośliwy jamy nosowej i zatok przynosowych",
+    "objawy": [
+      "ból w nosie",
+      "krwawienia",
+      "obrzęk twarzy",
+      "niedrożność jamy nosowej",
+      "ucisk w okolicy zatok"
+    ]
+  },
+  {
+    "icd_code": "C31",
+    "nazwa": "Nowotwór złośliwy zatok czołowych/klinowych/innych",
+    "objawy": [
+      "ból w okolicy zatok",
+      "obrzęk",
+      "utrata węchu",
+      "nasilony katar",
+      "dyskomfort przy schylaniu się"
+    ]
+  },
+  {
+    "icd_code": "C32",
+    "nazwa": "Nowotwór złośliwy krtani",
+    "objawy": [
+      "chrypka",
+      "trudności w mówieniu",
+      "ból gardła",
+      "zmiana barwy głosu",
+      "guzek wyczuwalny w krtani"
+    ]
+  },
+  {
+    "icd_code": "C33",
+    "nazwa": "Nowotwór złośliwy tchawicy",
+    "objawy": [
+      "ból w klatce",
+      "trudności w oddychaniu",
+      "kaszel",
+      "podwyższona wydzielina śluzowa",
+      "uczucie drapania w tchawicy"
+    ]
+  },
+  {
+    "icd_code": "C34",
+    "nazwa": "Nowotwór złośliwy oskrzela i płuca",
+    "objawy": [
+      "przewlekły kaszel",
+      "utraty masy ciała",
+      "duszność",
+      "ból w klatce",
+      "krwista plwocina"
+    ]
+  },
+  {
+    "icd_code": "C35",
+    "nazwa": "Nowotwór złośliwy opłucnej",
+    "objawy": [
+      "ból w klatce",
+      "duszność",
+      "kaszel",
+      "uczucie ściskania",
+      "chroniczne zmęczenie"
+    ]
+  },
+  {
+    "icd_code": "C36",
+    "nazwa": "Nowotwór złośliwy serca i śródpiersia",
+    "objawy": [
+      "ból w klatce",
+      "duszność",
+      "zmęczenie",
+      "kołatanie serca",
+      "ucisk w śródpiersiu"
+    ]
+  },
+  {
+    "icd_code": "C37",
+    "nazwa": "Nowotwór złośliwy grasicy",
+    "objawy": [
+      "ból w klatce",
+      "osłabienie",
+      "kaszel",
+      "problemy z połykaniem",
+      "ucisk za mostkiem"
+    ]
+  },
+  {
+    "icd_code": "C38",
+    "nazwa": "Nowotwór złośliwy serca, śródpiersia i opłucnej",
+    "objawy": [
+      "ból w klatce",
+      "trudności w oddychaniu",
+      "osłabienie",
+      "tkliwość przy dotyku mostka",
+      "zwiększona potliwość"
+    ]
+  },
+  {
+    "icd_code": "C39",
+    "nazwa": "Nowotwór złośliwy innych narządów klatki piersiowej",
+    "objawy": [
+      "ból w klatce",
+      "przewlekły kaszel",
+      "utraty masy ciała",
+      "duszność przy wysiłku",
+      "nawracające zapalenie płuc"
+    ]
+  }
+]

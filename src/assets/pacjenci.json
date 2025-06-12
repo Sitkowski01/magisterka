@@ -1,0 +1,44 @@
+{
+  "objawy": {
+    "chestPain": {
+      "location": "centralny",
+      "character": "ból powierzchowny uraz klatki",
+      "intensity": 8
+    },
+    "shortnessOfBreath": {
+      "rest": true,
+      "exercise": false,
+      "none": false,
+      "dunno": false
+    },
+    "cough": {
+      "type": "none",
+      "blood": false
+    },
+    "otherSymptoms": {
+      "breathingPain": false,
+      "palpitations": false,
+      "coldSweats": false,
+      "dizziness": false,
+      "fever": false,
+      "nausea": false,
+      "none": true
+    },
+    "capillaryRefillTime": 3
+  },
+  "historiaMedyczna": {
+    "hypertension": true,
+    "diabetes": false,
+    "asthma": false,
+    "heartDisease": true,
+    "thyroidIssues": false,
+    "takesMedication": true,
+    "medicationDetails": "beta-blokery",
+    "bloodPressure": "220/150",
+    "saturation": 88,
+    "heartRate": 120,
+    "glucoseLevel": 130,
+    "symptomDuration": "medium"
+  },
+  "opisObjawow": "ból w okolicy urazu, siniaki, obrzęk, lekki dyskomfort, wrażliwość prz…"
+}

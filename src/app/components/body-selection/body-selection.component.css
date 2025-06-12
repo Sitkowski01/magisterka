@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+/* ------------------------------------------------------ */
+/*  Podstawowy kontener .step (bez globalnego text-align) */
+/* ------------------------------------------------------ */
+.step {
+  background-color: #f0fafb; /* delikatny błękit */
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 2rem auto;  /* Wyśrodkowanie kontenera na stronie */
+  max-width: 700px;
+  box-shadow: 0 2px 5px rgba(0, 128, 128, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.step:hover {
+  box-shadow: 0 4px 10px rgba(0, 128, 128, 0.2);
+}
+html, body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* Ogólne ustawienia nagłówków H2 (kolor, margines) - bez wymuszania text-align */
+.step h2 {
+  color: #00796b; /* ciemniejsza zieleń/mięta */
+  margin-bottom: 0.75rem;
+}
+
+/* -------------------------------------------------------- */
+/*  Krok 1, 2, 5 - wyśrodkowanie całego tekstu             */
+/* -------------------------------------------------------- */
+.step-1,
+.step-2,
+.step-5 {
+  text-align: center; 
+}
+
+/* -------------------------------------------------------- */
+/*  Krok 3 i 4 - tekst wyrównany do lewej,                 */
+/*  ale H2 wciąż wyśrodkowane                              */
+/* -------------------------------------------------------- */
+.step-3,
+.step-4 {
+  text-align: left;
+}
+
+/* Nagłówek H2 w krokach 3 i 4 - wyśrodkowany */
+.step-3 h2,
+.step-4 h2 {
+  text-align: center;
+}
+
+/* -------------------------------------------------------- */
+/*  Paragrafy .step p - domyślnie 'text-align: inherit'    */
+/*  aby przejmowały styl z kontenera (center w 1,2,5        */
+/*  i left w 3,4)                                          */
+/* -------------------------------------------------------- */
+.step p {
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  /* Pozostawiamy text-align: inherit, by dziedziczyły z .step-1, .step-2, .step-5 (center)
+     i .step-3, .step-4 (left). Jeśli nie działa poprawnie,
+     usuń w ogóle text-align i pozwól na domyślną dziedziczenie. */
+  text-align: inherit;
+}
+
+/* -------------------------------------------------------- */
+/*  Kontener dla przycisków (Krok 2, 5 itp.)                */
+/* -------------------------------------------------------- */
+.buttons {
+  display: flex;
+  justify-content: center; /* Wyśrodkowanie przycisków w wierszu */
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* -------------------------------------------------------- */
+/*  Style przycisków                                       */
+/* -------------------------------------------------------- */
+.step button,
+.medical-form button {
+  background-color: #009688; /* turkus/mięta */
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.1s;
+  font-weight: 600;
+  margin: 0.5rem;
+}
+
+.step button:hover,
+.medical-form button:hover {
+  background-color: #00796b;
+  box-shadow: 0 2px 6px rgba(0, 121, 107, 0.4);
+}
+
+.step button:active,
+.medical-form button:active {
+  background-color: #005e52;
+  transform: scale(0.98);
+}
+
+/* -------------------------------------------------------- */
+/*  Krok 3: Lista Objawów                                  */
+/* -------------------------------------------------------- */
+.step-3 .symptoms-list {
+  margin-top: 1rem;
+  /* text-align: left;  => dziedziczy z .step-3 */
+}
+
+/* Podtytuły (h3) w kroku 3, wyrównanie do lewej */
+.step-3 h3 {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+/* Etykiety w liście objawów do lewej (bez center) */
+.step-3 .symptoms-list label {
+  justify-content: flex-start;
+}
+
+/* -------------------------------------------------------- */
+/*  Krok 4: Formularz medyczny                             */
+/* -------------------------------------------------------- */
+.step-4 .medical-form {
+  /* text-align: left; => dziedziczy z .step-4 */
+  max-width: 700px;
+  margin: 1rem auto;
+}
+
+.step-4 h3 {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+/* Etykiety w formularzu do lewej */
+.step-4 .medical-form label {
+  justify-content: flex-start;
+}
+
+/* -------------------------------------------------------- */
+/*  Pola formularza                                        */
+/* -------------------------------------------------------- */
+.medical-form label,
+.symptoms-list label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.25rem 0;
+  font-weight: 500;
+}
+
+.medical-form input[type="text"],
+.medical-form input[type="number"],
+.medical-form select,
+.medical-form textarea,
+.symptoms-list select,
+.symptoms-list input[type="number"] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.medical-form input[type="text"]:focus,
+.medical-form input[type="number"]:focus,
+.medical-form select:focus,
+.medical-form textarea:focus,
+.symptoms-list select:focus,
+.symptoms-list input[type="number"]:focus {
+  border-color: #009688;
+}
+
+/* Ostrzeżenia (np. suchy kaszel z krwią) */
+.warning {
+  color: #c62828;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+/* Sylwetka i obszary klikalne (krok 1) */
+.image-container {
+  position: relative;
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.overlay-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.clickable-area {
+  fill: transparent;
+  stroke: #009688;
+  stroke-width: 2;
+  cursor: pointer;
+  transition: fill 0.3s, stroke 0.3s;
+}
+
+.clickable-area:hover {
+  fill: rgba(0, 150, 136, 0.5);
+  stroke: #00796b;
+}
+
+.selected {
+  fill: rgba(0, 150, 136, 0.2);
+  stroke: #00796b;
+}
+
+/* Mapka SOR w kroku 5 */
+.map-sor-container {
+  margin-top: 1rem;
+  border: 2px solid #009688;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* =========================== */
+/* Kolory TRIAGE - dynamiczne  */
+/* =========================== */
+.triage-green {
+  color: #2e7d32;  /* ciemna zieleń */
+  font-weight: 700;
+}
+.triage-yellow {
+  color: #f9a825;  /* musztardowa żółć */
+  font-weight: 700;
+}
+.triage-orange {
+  color: #ef6c00;  /* pomarańcz */
+  font-weight: 700;
+}
+.triage-red {
+  color: #c62828;  /* ciemna czerwień */
+  font-weight: 700;
+}
+
+/* ============================== */
+/* Loader - nakładka i animacja  */
+/* ============================== */
+.loader-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #00796b; /* kolor "kręcącej się" części */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+.loader-overlay p {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+}
+
+@keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Kontener całej sekcji wyników */
+.analysis-results {
+  margin-top: 1.5rem;
+  text-align: center; /* wyśrodkuj tytuł i przyciski */
+}
+
+/* Nagłówek "Wyniki lokalnej analizy:" */
+.analysis-header {
+  font-size: 1.4rem;
+  color: #00796b; /* ciemniejsza zieleń/mięta */
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Karta z wynikami */
+.result-card {
+  background-color: #ffffff;
+  border: 2px solid #009688;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  max-width: 600px;
+  margin: 0 auto; /* wyśrodkuj samą kartę */
+  box-shadow: 0 2px 6px rgba(0, 150, 136, 0.15);
+  text-align: left; /* wyrównaj zawartość w środku do lewej */
+}
+
+/* Wiersze w karcie (TRIAGE, Choroba, Działanie) */
+.result-item {
+  margin: 0.75rem 0;
+  font-size: 1.1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: baseline; /* DODAJ TO */
+}
+
+/* Specjalne wyróżnienie dla sekcji "Działanie" */
+.action-box {
+  background-color: #f0fafb;
+  border-radius: 6px;
+  padding: 0.5rem;
+}
+
+/* Tekst wewnątrz action-box może być kilka linii */
+.action-box p {
+  margin: 0.25rem 0 0 0;
+  line-height: 1.4;
+}
+
+/* Przyciski pod kartą (np. Zresetuj) */
+.analysis-buttons {
+  margin-top: 1rem;
+}
+
+/* Możesz użyć stylu przycisków jak w reszcie projektu */
+.analysis-buttons button {
+  background-color: #009688;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.1s;
+  font-weight: 600;
+  margin: 0.5rem;
+}
+
+.analysis-buttons button:hover {
+  background-color: #00796b;
+  box-shadow: 0 2px 6px rgba(0, 121, 107, 0.4);
+}
+
+.analysis-buttons button:active {
+  background-color: #005e52;
+  transform: scale(0.98);
+}
+
+/* ============================== */
+/* Kolory TRIAGE - dynamiczne     */
+/* ============================== */
+.triage-green {
+  color: #2e7d32;  /* ciemna zieleń */
+  font-weight: 700;
+}
+.triage-yellow {
+  color: #f9a825;  /* musztardowa żółć */
+  font-weight: 700;
+}
+.triage-orange {
+  color: #ef6c00;  /* pomarańcz */
+  font-weight: 700;
+}
+.triage-red {
+  color: #c62828;  /* ciemna czerwień */
+  font-weight: 700;
+}
+.triage-blue {
+  color: #0d6efd;  /* ciemna czerwień */
+  font-weight: 700;
+}
+
