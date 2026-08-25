@@ -61,13 +61,24 @@ node server.js     # API na porcie 3000
 npm start          # aplikacja Angular
 ```
 
-## Zakres i ograniczenia
+## Wyniki badania
 
-Klasyfikacja triage'u w tej wersji opiera się na **regułach decyzyjnych**, nie na modelu
-uczonym — progi bólu i duszności są zapisane wprost w kodzie. Dopasowanie choroby również
-działa na prostym pokryciu objawów, bez miary podobieństwa semantycznego. Było to świadome
-uproszczenie: celem tej części pracy było zbudowanie działającego przepływu i interfejsu,
-a nie wdrożenie modelu produkcyjnie.
+Skuteczność klasyfikacji została zweryfikowana empirycznie: wyniki systemu porównano
+z oceną lekarza na zbiorze **698 formularzy pacjentów**. Zgodność wyniosła **90%**.
+
+To jest właściwa miara dla tego typu narzędzia — punktem odniesienia nie jest inny
+algorytm, tylko decyzja, którą podjąłby człowiek wykonujący tę pracę.
+
+## Zakres repozytorium
+
+Repozytorium zawiera **aplikację** — interfejs, przepływ wywiadu i warstwę prezentacji
+wyniku. Klasyfikacja w tej wersji działa na regułach decyzyjnych: progi bólu i duszności
+zapisane wprost w kodzie, a dopasowanie jednostki chorobowej liczy pokrycie objawów
+w opisie tekstowym.
+
+Część badawcza — przygotowanie zbioru, uczenie i ewaluacja względem oceny lekarza —
+powstała poza tym repozytorium, w ramach pracy magisterskiej. Backend wystawia punkt
+końcowy `/api/trainingData` z danymi wykorzystanymi na tym etapie.
 
 ⚠ **To projekt akademicki.** Aplikacja nie jest wyrobem medycznym i nie zastępuje
 konsultacji lekarskiej.
