@@ -40,6 +40,36 @@ klatki piersiowej` z objawami takimi jak ból w okolicy urazu, siniaki czy obrz�
 **6. Wynik i rekomendacja**
 Pacjent dostaje kolor triage'u, dopasowaną jednostkę chorobową i tekst zalecenia.
 
+## Decyzje projektowe
+
+**Klasyfikacja triage to jawne reguły, nie model.** Kolor wyznacza kilka warunków
+na intensywności bólu i duszności:
+
+```ts
+if (pain >= 8 && sobRest)                return 'Czerwony';
+if (pain >= 8 || (pain >= 5 && sobRest)) return 'Pomarańczowy';
+if (pain >= 3 || sobExert)               return 'Żółty';
+if (pain === 0 && !sobRest && !sobExert) return 'Niebieski';
+return 'Zielony';
+```
+
+W narzędziu, które podpowiada „dzwoń pod 112", **decyzja musi dać się wyjaśnić**.
+Reguły da się pokazać lekarzowi linijka po linijce i zapytać, czy próg ósemki jest
+właściwy. Model zwracający ten sam kolor bez uzasadnienia byłby tu nie do obrony —
+i to on jest przedmiotem części badawczej, a nie tej aplikacji.
+
+**Duszność jest rozbita na spoczynkową i wysiłkową.** To nie ta sama informacja:
+duszność w spoczynku przesuwa pacjenta o dwa poziomy wyżej niż ta przy wysiłku.
+
+**Dopasowanie jednostki chorobowej jest opcjonalne.** Włącza je osobne zaznaczenie
+i opis objawów tekstem. Liczony jest udział objawów pokrywających się z opisem,
+wygrywa najwyższy wynik. Domyślnie wyłączone, bo dopasowanie po słowach kluczowych
+jest wyraźnie słabsze niż sama klasyfikacja i nie powinno sugerować pewności,
+której nie ma.
+
+**Komponenty standalone**, bez NgModule — każdy krok wywiadu to osobny komponent
+z własną walidacją.
+
 ## Stack
 
 | Warstwa | Technologie |
@@ -79,6 +109,15 @@ w opisie tekstowym.
 Część badawcza — przygotowanie zbioru, uczenie i ewaluacja względem oceny lekarza —
 powstała poza tym repozytorium, w ramach pracy magisterskiej. Backend wystawia punkt
 końcowy `/api/trainingData` z danymi wykorzystanymi na tym etapie.
+
+### Co warto wiedzieć, czytając kod
+
+- **Ekran „liczenia" trwa dwie sekundy sztucznie.** Obie predykcje są natychmiastowe;
+  opóźnienie jest po to, żeby wynik nie pojawiał się w tej samej klatce co kliknięcie.
+  Przy prawdziwym wywołaniu modelu ten `setTimeout` zastąpiłoby faktyczne żądanie.
+- **Reguły triage'u i dopasowanie choroby leżą w `body-selection.component.ts`**,
+  a nie w osobnej usłudze. Przy pięciu warunkach wydzielanie warstwy byłoby na wyrost,
+  ale to pierwsza rzecz do przeniesienia, gdyby reguł przybyło.
 
 ⚠ **To projekt akademicki.** Aplikacja nie jest wyrobem medycznym i nie zastępuje
 konsultacji lekarskiej.
